@@ -1,8 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
-
+## The function below are twi functions that develip a special object which stores a matrix and caches its inverse. 
 ## Write a short comment describing this function
-
+##The makeChacheMatrix function creates a special "matrix" object that can cahce its inverse
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y){
@@ -21,7 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## The cacheSolve function calucalted the inverse of the special "matrix" dervied from the makeCacheMatrix function. If the inverse is alreadyt calculated then it should
+##get the inverse from the cache
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inv <- x$getInverse()
